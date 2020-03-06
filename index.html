@@ -14,10 +14,15 @@
 <body>
     <header>
         <div class="container">
-            <a href="index.html" title="Acessar a página inicial do site">
-                <img src="img/Logo.svg" alt="Logo do site E-players">
-            </a>
-            <nav>
+            <div>
+                <a href="#" onclick="botaomenu()">
+                    <i class="fas fa-bars"></i>
+                </a>
+                <a href="index.html" title="Acessar a página inicial do site">
+                    <img src="img/Logo.svg" alt="Logo do site E-players">
+                </a>
+            </div>
+            <nav id="menu">
 
                 <ul>
 
@@ -326,6 +331,16 @@
         <p>©COPYRIGHT Todos os direitos reservado - SENAI de informática E-sports</p>
 
     </footer>
+    <script>
+        function botaomenu(){
+            var m = document.getElementById("menu");
+            if(m.style.display == "block"){
+                m.style.display = "none";
+            }else{
+                m.style.display = "block";
+            }
+        }
+    </script>
 </body>
 
 </html>
